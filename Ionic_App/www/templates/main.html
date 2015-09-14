@@ -1,0 +1,49 @@
+<!--<ion-view>
+  <div class="bar bar-header">
+  <button class="button button-icon icon ion-navicon"></button>
+  <div class="h1 title">Header Buttons</div>
+  <button class="button button-clear button-positive">Edit</button>
+</div>
+  <ion-tabs class="tabs-icon-top tabs-balanced">
+
+    <ion-tab title="Chat" icon="ion-chatboxes" href="#/main/dash">
+      <ion-nav-view name="dash-tab"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Friends" icon="ion-person-stalker" href="#/main/public">
+      <ion-nav-view name="public-tab"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Settings" icon="ion-android-settings" href="#/main/admin">
+      <ion-nav-view name="admin-tab"></ion-nav-view>
+    </ion-tab>
+
+  </ion-tabs>
+</ion-view>-->
+    <ion-side-menus>
+
+        <ion-pane ion-side-menu-content>
+            <ion-nav-bar type="bar-positive"
+                         back-button-type="button-icon"
+                         back-button-icon="ion-ios7-arrow-back"
+                         animation="nav-title-slide-ios7"
+                >
+
+             </ion-nav-bar>
+            <ion-nav-view name="main"></ion-nav-view>
+        </ion-pane>
+
+        <ion-side-menu side="left">
+            <header class="bar bar-header bar-assertive">
+                <div class="title">Side Menu</div>
+            </header>
+            <ion-content has-header="true">
+                <ul class="list">
+                    <a ui-sref="entry" class="item">Back To Entry Page</a>
+                    <a ui-sref="main.home" class="item" ng-click="toggleMenu()">Home</a>
+                    <a ui-sref="main.tabs" class="item" ng-click="toggleMenu()">Tabs</a>
+                </ul>
+            </ion-content>
+        </ion-side-menu>
+
+    </ion-side-menus>
